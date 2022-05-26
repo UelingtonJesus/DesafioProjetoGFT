@@ -11,7 +11,7 @@ public class MyDog implements Comportamento{
 
     Scanner scan = new Scanner(System.in);
     private String nome;
-    private List<String> estomago = new ArrayList<>();
+    private final List<String> estomago = new ArrayList<>();
 
 
 
@@ -33,7 +33,7 @@ public class MyDog implements Comportamento{
     @Override
     public void comer() {
         String comida;
-        Boolean fimLoop = true;
+        boolean fimLoop = true;
         do {
             if (estomago.size() == 3) {
                 System.out.println("\nBarriga cheia!\nPreciso digerir um pouco dessa comida...");
